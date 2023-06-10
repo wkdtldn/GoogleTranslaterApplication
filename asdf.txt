@@ -1,0 +1,14 @@
+데이터 분석
+
+1. 날씨 - https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do?pgmNo=179
+2. 대중교통 - 
+3. 물가 상승률 - https://www.index.go.kr/unify/idx-info.do?idxCd=4226
+4. 식품 데이터 - https://www.data.go.kr/data/15100064/standard.do
+-----------------------------------------------------------------------------------------------------------------------------------
+웹 사이트			※웹 검색 기능 X
+			※어디까지 사용 가능한가
+
+1. 번역기 (google 번역 api 사용 python > flask > vue, js, html + css)
+2. 밥집 검색		- 검색 기능 사용 여부
+			- 지도 기능 사용  여부
+3. 데이터 분석 그래프	- 이미지 삽입이 가능한가
