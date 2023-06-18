@@ -2,35 +2,39 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 <title>Translater</title>
 </head>
 <body>
-    <table width="50%" style="text-align:center; border:none">
-
-    <tr>
-
-        <td colspan="2" style="border: 0;
-        border-radius: 15px;background-color:lightgrey"><h2><select id="dd">
-            <option>언어 선택</option>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="my-3 ps-3 fs-3 fw-bold ">언어 선택</div>
+          <select class="form-select" aria-label="Default select example" id="dd">
             <option value="ko">한국어</option>
             <option value="en">영어</option>
-        </select></h2></td>
+          </select>
+        </div>
+      <div class="col">
+        <select class="form-select" aria-label="Default select example" id="dd">
+          <option value="ko">영어</option>
+          <option value="en">한국어</option>
+        </select>
+      </div>
+    </div>
 
-    </tr>
-
-    <tr>
-
-        <td style=  "background-color : rgb(233, 233, 233); width:20%;border: 0;
-        border-radius: 15px;"><h2><div id = "header" class = 'asdf'>
-            <input class = "transinput" type = "text"  id = "trans_word" placeholder = "번역할 내용을 입력해주세요"></h2></td>
-
-        <td style="height:200px; border: 0;
-        border-radius: 15px;background-color: #f2f7ca; text-align:left"><p><div class="output" id="outprint">
-         ></div></p></td>
-
-    </tr><h2><button onClick="send_trnaslate()">번역</button></h2>
-
-</table>
+      <div class="row">
+        <div class="col pe-0">
+          <input class="form-control" style="height: 300px !important;" type="text"  id="trans_word" placeholder="번역할 내용을 입력해주세요">
+        </div>
+        <div class="col ps-0">
+          <div class="form-control" style="height: 300px !important" id="outprint"></div>
+        </div>
+      </div>
+      <div class="row ms-0 me-0">
+        <button type="button" class="btn btn-light ps-10" style="width: 1300px; height: 45px;" onClick = "send_trnaslate()">번역</button>
+      </div>
+    </div>  
 </body>
 
 <script>
@@ -73,60 +77,59 @@
 
 <style>
 .transinput{
-    color: #8b7f7f;
-    width : 470px;
-    height : auto;
-    font-size : 15px; 
-    text-align : left;
-    border: 0;
-    border-radius: 15px;
-    outline: none;
-    padding-left: 10px;
-    background-color: rgb(233, 233, 233);
-    
+  font-size : 15px; 
+  text-align : left;
+}
+.parent{
+  margin: 10px auto;
+  top: 25%!important;
+}
+
+.first {
+  float: left;
+  width:50%;
+  box-sizing: border-box;
+}
+.second{
+  float: left;
+  width:50%;
+  box-sizing: border-box;
+}
+.output {
+  text-align : left;
+  background-color : #ffffff;
+  border : 0;
 }
 .asdf {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-button{
-    top: 310px;
-    float:left;
-    width: 950px;
-    height : 55px;
-    font-size : 50xp;
-    position: absolute;
-    background-color:#0a0a23;
-    color: #fff;
-    padding:15px;
-    border: 0;
-    border-radius: 15px;
-}
 button:hover {
-      background-color:#4c4e53;
-      transition: 0.1s;
-}
-button:active {
-    background-color: #ffbf00;
-    transition: 0.2s;
+  background-color:#4c4e53;
+  transition: 0.1s;
 }
 html{
-    align-items: center;
+  align-items: center;
 }
-body{
-    align-items: center;
+body {
+  margin: 0 auto;
+}
+ul {
+  width: 300px;
 }
 select {
-  width: 870px; /* 원하는 너비설정 */
-  height: 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
+  width: 150px;
+  height : 50px;
+  margin: 0 auto;
+  text-align : center;
+  box-sizing: border-box;
+  border-radius: 10px;
   font-family: 'Roboto';  /* 폰트 상속 */
   font-style: normal;
   font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
   background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
   border: 1px solid #999; 
   -webkit-appearance: none; /* 네이티브 외형 감추기 */
