@@ -1,6 +1,5 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  ✨ Google Translater API 활용 Project!<br/>
 </h2>
 <div align="center">
   <img alt="Demo" src="./src/mainView.png" />
