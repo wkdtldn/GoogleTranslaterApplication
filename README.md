@@ -2,7 +2,7 @@
   ✨ Google Translater API 활용 Project!<br/>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./src/mainView.png" />
+  <img alt="Demo" src="./src/Mock.png" />
 </div>
 
 <br/>
