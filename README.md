@@ -17,3 +17,10 @@
 ![GitHub forks](https://img.shields.io/github/forks/wkdtldn/GoogleTranslaterApplication?color=red&logo=github&style=for-the-badge)
 
 </center>
+
+### How to use....
+1. Choose the language what you want to translate by.
+2. Write the sentences or the word what you want to translate.
+3. Click the button under the text place or press the enterkey.
+4. And now.. the translation will come out!
+* Also you can use Papago..
