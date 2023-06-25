@@ -28,7 +28,7 @@
         <input class="form-control" style="height: 300px !important;" type="text" onkeydown="enterkey()" id="trans_word" placeholder="번역할 내용을 입력해주세요">
       </div>
       <div class="col ps-0 p-1 ms-1">
-        <div class="form-control" style="height: 300px !important" id="outprint"></div>
+        <div class="form-control" style="height: 300px !important" Name="output" id="outprint"></div>
       </div>
     </div>
     <div class="row p-1 m-1">
@@ -133,8 +133,14 @@
     var opt1 = document.getElementById('dd');
     var opt2 = document.getElementById('ff');
     if (opt1.value === "ko"){
+      document.getElementById('trans_word').value = null;
+      document.getElementById('outprint').innerText = null;
+      window.setTimeout(function () {trans_word.focus(); }, 0); 
       opt2.value = 'en'
     }else{
+      document.getElementById('trans_word').value = null;
+      document.getElementById('outprint').innerText = null;
+      window.setTimeout(function () {trans_word.focus(); }, 0); 
       opt2.value = 'ko'
     }
   }
@@ -142,8 +148,15 @@
     var opt1 = document.getElementById('dd');
     var opt2 = document.getElementById('ff');
     if (opt2.value === "ko"){
+      document.getElementById('trans_word').value = null;
+      document.getElementById('outprint').innerText = null;
+      window.setTimeout(function () {trans_word.focus(); }, 0); 
       opt1.value = 'en'
+      
     }else{
+      document.getElementById('trans_word').value = null;
+      document.getElementById('outprint').innerText = null;
+      window.setTimeout(function () {trans_word.focus(); }, 0); 
       opt1.value = 'ko'
     }
   }
@@ -158,6 +171,10 @@ select {
   height : 50px;
   margin: 0 auto;
   text-align : center;
+}
+#outprint{
+  text-align: center;
+  padding: 100px 0;
 }
 </style>
 </html>
